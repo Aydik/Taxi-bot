@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --fix",
+    "start": "webpack && babel-node --presets @babel/preset-env --presets @babel/preset-react app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,19 @@
   "bugs": {
     "url": "https://github.com/Aydik/tax_bot_admin/issues"
   },
-  "homepage": "https://github.com/Aydik/tax_bot_admin#readme"
+  "homepage": "https://github.com/Aydik/tax_bot_admin#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "pg": "^8.7.3",
+    "react": "^18.1.0",
+    "sequelize": "^6.19.0",
+    "sqlite3": "^5.0.8",
+    "webpack": "^5.72.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/node": "^7.17.10",
+    "webpack-cli": "^4.9.2"
+  }
 }
