@@ -3,8 +3,8 @@ import express from 'express'
 import { engine } from 'express-handlebars'
 import { readFile } from 'fs.promises'
 
-
-const sequelize = new Sequelize('postgres://taxi_bot_user:789456123@localhost:5432/taxi_bot')
+const { DB_USER = 'taxi_bot_user', DB_PASSWORD = '789456123', DB_HOST = 'localhost', DB_PORT = '5432', DB_NAME = 'taxi_bot' } = process.env
+const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}`)
 
 
 const app = express()
