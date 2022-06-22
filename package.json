@@ -21,15 +21,23 @@
   "dependencies": {
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
+    "body-parser": "^1.20.0",
+    "css-loader": "^6.7.1",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "fs": "^0.0.1-security",
+    "fs.promises": "^0.1.2",
     "pg": "^8.7.3",
     "react": "^18.1.0",
     "sequelize": "^6.19.0",
     "sqlite3": "^5.0.8",
+    "style-loader": "^3.3.1",
     "webpack": "^5.72.1"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/node": "^7.17.10",
+    "@types/node": "^17.0.36",
     "webpack-cli": "^4.9.2"
   }
 }

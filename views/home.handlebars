@@ -1,0 +1,11 @@
+<form action="save" method="post" id="data">
+   <table>
+      {{#each data}}
+         <tr>
+            <td>{{name}}</td> 
+            <td><input name="{{name}}" value="{{data}}"></td>   
+         </tr>
+      {{/each}}
+   </table>
+   <input type="submit" value="Сохранить">
+</form>

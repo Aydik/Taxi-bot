@@ -1,0 +1,5 @@
+<table id="data">
+    {{#each tablenames}}
+        <tr><td><a href="/log?page=1&name={{@key}}">{{@key}}: {{this}}</a></td></tr>
+    {{/each}}
+</table>

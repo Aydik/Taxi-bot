@@ -1,0 +1,14 @@
+{
+    "web_server_port": {
+        "type": "port",
+        "label": "Порт сервера"
+    },
+    "web_server_host": {
+        "type": "host",
+        "label": "Адрес сервера"
+    },
+    "skat_api_url": {
+        "type": "url",
+        "label": "api url"
+    }
+}

@@ -1,0 +1,29 @@
+<div class="pagination">
+    {{#if prevpage}}
+    <a href="/log?page={{prevpage}}">&lt;&lt; Previous</a>
+    {{/if}}
+    <a class="active">{{page}}</a>
+    {{#if nextpage}}
+        <a href="/log?page={{nextpage}}">Next >></a>
+    {{/if}}
+</div>
+
+
+<table id="data">
+    <tr id="up">
+        <td>id</td> 
+        <td>username</td>
+        <td>name</td>
+        <td>text</td>   
+        <td>time</td>   
+    </tr>
+    {{#each data}}
+        <tr>
+            <td>{{id}}</td> 
+            <td>{{username}}</td>
+            <td>{{name}}</td>
+            <td>{{text}}</td>   
+            <td>{{time}}</td>   
+        </tr>
+    {{/each}}
+</table>
