@@ -1,0 +1,14 @@
+[Unit]
+Description=telegram taxi bot admin
+After=network.target
+
+[Service]
+Type=simple
+User=kologermit
+Group=kologermit
+WorkingDirectory=/home/kologermit/Taxi-bot
+ExecStart=npm start
+EnvironmentFile=-/etc/taxi_bot/taxi_bot_admin.env
+
+[Install]
+WantedBy=multi-user.target
