@@ -181,4 +181,5 @@ const mapping = await loadMapping()
   }
 })
 
-app.listen(4000,()=> console.log('app started'))
+const port = process.env.PORT || 4000
+app.listen(port,()=> console.log(`App started on port=${port}`))
